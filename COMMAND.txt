@@ -1,0 +1,20 @@
+TO DO:
+change COM port in the command
+
+
+
+Seeed_XIAO_nRF52840_Sense_bootloader-0.6.1
+adafruit-nrfutil.exe --verbose dfu serial --package Seeed_XIAO_nRF52840_Sense_bootloader-0.6.1.ZIP --port COM23 -b 115200 --singlebank --touch 1200
+
+
+xiao_nrf52840_ble_sense_bootloader-0.9.2_s140_7.3.0
+adafruit-nrfutil.exe --verbose dfu serial --package xiao_nrf52840_ble_sense_bootloader-0.9.2_s140_7.3.0.ZIP --port COM23 -b 115200 --singlebank --touch 1200
+
+wiscore_rak4631_board_bootloader-0.4.3_s140_6.1.1
+adafruit-nrfutil.exe --verbose dfu serial --package wiscore_rak4631_board_bootloader-0.4.3_s140_6.1.1.ZIP --port COM25 -b 115200 --singlebank --touch 1200
+
+
+if device is not responding directly on Arduino or Platformio:
+first part is location of adafruit-nrfutil.exe, and second location is of the firmware file complied ZIP
+
+"C:\Users\NoahWeckend\AppData\Local\Arduino15\packages\Seeeduino\hardware\nrf52\1.1.10/tools/adafruit-nrfutil/win32/adafruit-nrfutil.exe" --verbose dfu serial -pkg "D:\Hardip\xiao DFU_OTA\.pio\build\tsp\firmware.zip" -p COM23 -b 115200 --singlebank
